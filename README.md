@@ -144,6 +144,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 This tool is intended for educational purposes and authorized security testing only. Users are responsible for ensuring they have proper authorization before using this tool on any system. I'm not responsible for any misuse.
 
-## Author 👨‍💻
+## Support
 
 Created for cybersecurity education and CTF challenges. If you find this tool useful, please consider giving it a star ⭐ on GitHub!
