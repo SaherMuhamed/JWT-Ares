@@ -71,6 +71,8 @@ Progress:  80%|█████████████████████�
 ```
 
 ## Screenshots
+![](https://github.com/SaherMuhamed/JWT-Ares/blob/main/images/Screenshot_2025-07-14_04_20_21.png)
+![](https://github.com/SaherMuhamed/JWT-Ares/blob/main/images/Screenshot_2025-07-14_04_29_02.png)
 
 ## How It Works 🔧
 
