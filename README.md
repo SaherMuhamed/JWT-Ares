@@ -144,4 +144,4 @@ This tool is intended for educational purposes and authorized security testing o
 
 ## Support
 
-Created for cybersecurity education and CTF challenges. If you find this tool useful, please consider giving it a star ⭐ on GitHub!
+Created for cybersecurity education and CTF challenges. If you find this tool useful, please consider giving it a star ⭐
