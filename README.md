@@ -21,6 +21,7 @@ cd JWT-Ares
 
 # Install required dependencies
 pip install tqdm
+pip install colorama
 ```
 
 ## Usage
